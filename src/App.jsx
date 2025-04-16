@@ -1,6 +1,7 @@
 import "./App.css";
 
 function App() {
+  // object cards stored in an array containing id, name, price and image
   const products = [
     {
       id: 1,
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       <div className="App.">
+        {/* navbar */}
         <nav className="bg-gray-800 flex justify-between p-2">
           <div className="flex gap-2">
             <div className="flex items-center">
@@ -54,9 +56,12 @@ function App() {
             </button>
           </div>
         </nav>
+        {/* body  */}
+        {/* webpage header */}
         <h1 className=" mb-4 flex mt-4 text-4xl justify-center font-semibold">
           The Future, One Line At A time
         </h1>
+        {/* calling the product array using the map function to get data on items stored */}
         <div className="flex gap-2 p-2 justify-center bg-gray-200">
           {products.map((products, index) => (
             <div key={index}>
